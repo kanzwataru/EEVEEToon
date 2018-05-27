@@ -18,3 +18,5 @@ cp -R extras/* build/_temp/
 cd build/_temp
 zip -r ../$outer_name *
 cd ../../
+
+rm -R build/_temp
