@@ -8,4 +8,4 @@ add-ons (Edit->User Preferences...->Add-ons->Install Add-on from file...).
 This is work in progress, as is Blender 2.8. There is currently a bug where changing values
 of node groups does not do anything and so you must work around it like this:
 
-![a](https://imgur.com/a/QkIDXPg)
+![](https://i.imgur.com/XxVi2Yz.png)
