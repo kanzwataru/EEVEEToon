@@ -37,14 +37,28 @@ class AppendExtraNprNodes(bpy.types.Operator):
     def execute(self, context):
         import_from_library('extra_shaders');
         return {'FINISHED'}
+
+class EeveeNprPanel(bpy.types.Panel):
+    bl_label = "Eevee Toon"
+    bl_space_type = "PROPERTIES"
+    bl_region_type = "WINDOW"
+    bl_context = "material"
     
+    def draw(self, context):
+        layout = self.layout
+        col = layout.column()
+        col.operator("material.append_base_npr_nodes")
+        col.operator("material.append_extra_npr_nodes")
+
 def register():
     bpy.utils.register_class(AppendBaseNprNodes)
     bpy.utils.register_class(AppendExtraNprNodes)
+    bpy.utils.register_class(EeveeNprPanel)
     
 def unregister():
     bpy.utils.unregister_class(AppendBaseNprNodes)
     bpy.utils.unregister_class(AppendExtraNprNodes)
+    bpy.utils.unregister_class(EeveeNprPanel)
 
 if __name__ == "__main__":
     register()
