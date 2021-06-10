@@ -1,4 +1,5 @@
 # EEVEEToon
+## NOTE: This is outdated and may not work with the latest Blender releases
 Set of nodes and sample shaders to make NPR shading in Blender Eeevee easier
 
 Head over to [Releases](https://github.com/kanzwataru/EEVEEToon/releases) and download the
